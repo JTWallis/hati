@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #222222;
+    font-family: monospace, monospace;
+}
+
+canvas {
+    touch-action: none;
+}
+
+span {
+    font-size: 10px;
+}
+
+.shadowOutline {
+    text-shadow:    
+         0.5px  0.5px 0 #000,
+         0.5px -0.5px 0 #000,
+        -0.5px  0.5px 0 #000,
+        -0.5px -0.5px 0 #000;
+}

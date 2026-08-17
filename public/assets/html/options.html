@@ -1,0 +1,109 @@
+<div class="optionsRoot">
+    <div class="fps">
+        <span for="optionsFps">Fps:</span>
+        <input id="optionsFps" type="checkbox" checked="true">
+    </div>
+
+    <div class="slider">
+        <div>
+            <span title="Day-night-cycle transition speed. A higher value may be easier on the eyes but results in more visible screen tearing.">
+                Bg fade:
+            </span>
+            <span 
+                id="optionsBgFadeValue"
+                class="sliderValue"
+                title="Day-night-cycle transition speed. A higher value may be easier on the eyes but results in more visible screen tearing."
+            >
+                8s
+            </span>
+        </div>
+        <input 
+            id="optionsBgFade"
+            type="range" 
+            min="4" max="15" value="8"
+            title="Day-night-cycle transition speed. A higher value may be easier on the eyes but results in more visible screen tearing."
+        >
+    </div>
+
+    <div class="slider">
+        <div>
+            <span>Sound:</span>
+            <span id="optionsSoundValue" class="sliderValue">50%</span>
+        </div>
+        <input id="optionsSound" type="range" min="0" max="100" value="50">
+    </div>
+
+    <div class="slider">
+        <div>
+            <span>Music:</span>
+            <span id="optionsMusicValue" class="sliderValue">50%</span>
+        </div>
+        <input id="optionsMusic" type="range" min="0" max="100" value="50">
+    </div>
+</div>
+
+<style>
+
+.optionsRoot {
+    width: 70px;
+    height: 115px;
+    max-height: 115px;
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsRoot span {
+    font-size: 8px;
+}
+
+input {
+    height: 10px;
+}
+
+input[type="checkbox"] {
+    flex-basis: 20%;
+    accent-color: #DB7B4A;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    height: 2px;
+    width: 90%;
+    background-color: #DB7B4A;
+    border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 8px;
+    width: 8px;
+}
+
+.fps {
+    height: 10%;
+    width: 90%;
+    margin-top: 8px;
+    margin-left: 2px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sliderValue {
+    align-self: flex-end;
+    font-size: 8px;
+}
+
+</style>

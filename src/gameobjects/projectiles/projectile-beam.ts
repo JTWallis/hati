@@ -1,0 +1,5 @@
+/* 
+Laserbeam from start mousepos to end mousepos. 
+Has max distance.
+Destroys any enemies and reflects projectiles.
+*/
